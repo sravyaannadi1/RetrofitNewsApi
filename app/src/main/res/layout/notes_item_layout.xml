@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#C5B8DC"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="start"
+        android:text="Notes"
+        android:textColor="#0F0233"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:gravity="start"
+        android:layout_margin="5dp"
+        android:text="Title"
+        android:layout_width="0dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notes"/>
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="0dp"
+        android:text="Body"
+        android:maxLines="2"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="10sp"
+        android:layout_margin="5dp"
+        android:padding="10dp"/>
+        <TextView
+            android:text="Time"
+            android:id="@id/time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/body"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="5dp"/>
+    <TextView
+        android:text="Priority"
+        android:id="@+id/priority"
+        android:layout_width="0dp"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/time"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="5dp"
+        android:padding="5dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
